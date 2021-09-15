@@ -20,12 +20,12 @@ public class Factorial {
             }
             else
             {
-                System.out.println("Eror in input data");
+                System.out.println("Error in input data");
             }
         }
         else
         {
-            System.out.println("Eror in input data");
+            System.out.println("Error in input data");
         }
     }
     public static void Fact(int n)
