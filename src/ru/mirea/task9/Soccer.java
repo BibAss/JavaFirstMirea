@@ -74,7 +74,6 @@ public class Soccer extends JFrame {
                     if(e.getSource() == b2)
                     {
                         team2 += 1;
-                        int a = checkResults();
                         l1.setText("Result: " + team1 + "X" + team2);
                         l2.setText("Last Scorer: " + Team2);
                         if(checkResults() == 1)
