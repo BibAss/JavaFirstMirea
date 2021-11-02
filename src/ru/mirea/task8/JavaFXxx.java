@@ -6,15 +6,12 @@ import java.awt.event.*;                //отслеживание нажати�
 import java.awt.*;
 
 class App extends JFrame implements ActionListener {
-    boolean f = false;
     Image icon = Toolkit.getDefaultToolkit().getImage("src/ru/mirea/task8/res/MrBebra.jpg");
     JButton button = new JButton("Запустить");
     Container cont = this.getContentPane();
     ButtonGroup group = new ButtonGroup();
     JRadioButton radio1 = new JRadioButton("Bebra");
     JRadioButton radio2 = new JRadioButton("Bebra Searching");
-    JRadioButton radio3 = new JRadioButton("20 Shapes");
-    Graphics g;
 
     public App(String s) {
         super(s);
@@ -33,8 +30,6 @@ class App extends JFrame implements ActionListener {
         group.add(radio2);
         cont.add(radio2);
 
-        group.add(radio3);
-        cont.add(radio3);
 
         cont.add(button);
         button.setBounds(200,100,100,50);
@@ -65,25 +60,6 @@ class App extends JFrame implements ActionListener {
         frame.setVisible(true);
         frame.setLocationRelativeTo(null);
     }
-    public void ShapesFigures(Graphics g){
-        setBackground(Color.white);
-        if(!f) {
-            for (int i =0;i < 20; i++)
-            {
-                int x=100+(int)(Math.random()*500);
-                int y=100+(int)(Math.random()*500);
-                int a=(int)(Math.random()*4);
-                Shape shape = switch (a) {
-                    case 0 -> new Rectangle(x, y);
-                    case 2 -> new Triangle(x, y);
-                    default -> new Circle(x, y);
-                };
-                shape.paintFigure(g);
-            }
-
-            f=true;
-        }
-    }
 
     @Override
     public void actionPerformed(ActionEvent e) {
@@ -92,9 +68,6 @@ class App extends JFrame implements ActionListener {
         }
         if(radio2.isSelected()){
             BebraAnim();
-        }
-        if(radio3.isSelected()){
-            ShapesFigures(g);
         }
     }
     public static void main(String[] args) {
