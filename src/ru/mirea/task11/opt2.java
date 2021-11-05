@@ -20,7 +20,7 @@ public class opt2 {
 
             Container container = getContentPane();
 
-            JLabel north = new JLabel("Север" );
+            JLabel north = new JLabel("North" );
             north.setHorizontalAlignment(JLabel.CENTER);
             north.setBorder(BorderFactory.createLineBorder(Color.black));
             north.addMouseListener(new MouseListener() {
@@ -41,7 +41,7 @@ public class opt2 {
 
                 @Override
                 public void mouseEntered(MouseEvent e) {
-                    JOptionPane.showMessageDialog(north, "Сервер");
+                    JOptionPane.showMessageDialog(north, "Север!");
                 }
 
                 @Override
@@ -50,7 +50,7 @@ public class opt2 {
                 }
             });
 
-            JLabel east = new JLabel("Восток" );
+            JLabel east = new JLabel("East" );
             east.setHorizontalAlignment(JLabel.CENTER);
             east.setBorder(BorderFactory.createLineBorder(Color.black));
             east.addMouseListener(new MouseListener() {
@@ -71,7 +71,7 @@ public class opt2 {
 
                 @Override
                 public void mouseEntered(MouseEvent e) {
-                    JOptionPane.showMessageDialog(east, "поток");
+                    JOptionPane.showMessageDialog(east, "Восток!");
                 }
 
                 @Override
@@ -80,7 +80,7 @@ public class opt2 {
                 }
             });
 
-            JLabel south = new JLabel("Юг" );
+            JLabel south = new JLabel("South" );
             south.setHorizontalAlignment(JLabel.CENTER);
             south.setBorder(BorderFactory.createLineBorder(Color.black));
             south.addMouseListener(new MouseListener() {
@@ -101,7 +101,7 @@ public class opt2 {
 
                 @Override
                 public void mouseEntered(MouseEvent e) {
-                    JOptionPane.showMessageDialog(south, "гю");
+                    JOptionPane.showMessageDialog(south, "Юг!");
                 }
 
                 @Override
@@ -110,7 +110,7 @@ public class opt2 {
                 }
             });
 
-            JLabel west = new JLabel("Запад" );
+            JLabel west = new JLabel("West" );
             west.setHorizontalAlignment(JLabel.CENTER);
             west.setBorder(BorderFactory.createLineBorder(Color.black));
             west.addMouseListener(new MouseListener() {
@@ -131,7 +131,7 @@ public class opt2 {
 
                 @Override
                 public void mouseEntered(MouseEvent e) {
-                    JOptionPane.showMessageDialog(west, "Отпад");
+                    JOptionPane.showMessageDialog(west, "Запад");
                 }
 
                 @Override
@@ -140,7 +140,7 @@ public class opt2 {
                 }
             });
 
-            JLabel center = new JLabel("Центр" );
+            JLabel center = new JLabel("Center" );
             center.setHorizontalAlignment(JLabel.CENTER);
             center.setBorder(BorderFactory.createLineBorder(Color.black));
             center.addMouseListener(new MouseListener() {
@@ -161,7 +161,7 @@ public class opt2 {
 
                 @Override
                 public void mouseEntered(MouseEvent e) {
-                    JOptionPane.showMessageDialog(center, "Мидл");
+                    JOptionPane.showMessageDialog(center, "Центр");
                 }
 
                 @Override
@@ -175,7 +175,7 @@ public class opt2 {
             container.add(south, BorderLayout.SOUTH);
             container.add(west, BorderLayout.WEST);
             container.add(center);
-            // Открываем окно
+
             pack();
             setSize(300,300);
         }
