@@ -6,7 +6,7 @@ import java.io.FileWriter;
 import java.io.IOException;
 import java.util.Scanner;
 
-public class opt1 {
+public class doAverything {
     public static void main(String[]args)
     {
         //запишем что-нибудь
